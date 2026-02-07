@@ -4,8 +4,10 @@
 
 1. install docker on your system
 2. install nodejs: https://nodejs.org/en/download
-3. install dependencies
-  `npm run install`
+3. Clone this repo
+4. install project dependencies: `npm install`
+5. install dependencies
+  `npm run playwright:install`
 
 ## Running tests
 

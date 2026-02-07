@@ -9,7 +9,7 @@
     "test:codegen": "npx playwright codegen",
     "test:update-snapshots": "PW_TEST_CONNECT_WS_ENDPOINT=ws://127.0.0.1:4000/ npx playwright test --update-snapshots",
     "report:show": "playwright show-report",
-    "install": "npx playwright install firefox chromium"
+    "playwright:install": "npx playwright install firefox chromium"
   },
   "keywords": [],
   "author": "Robert Scheinpflug",
