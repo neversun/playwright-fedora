@@ -1,0 +1,20 @@
+{
+  "name": "testing-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "docker run -p 4000:3000 --rm --init -it --workdir /home/pwuser --user pwuser mcr.microsoft.com/playwright:v1.58.2-noble /bin/sh -c \"npx -y playwright@1.58.2 run-server --port 3000 --host 0.0.0.0\"",
+    "test": "PW_TEST_CONNECT_WS_ENDPOINT=ws://127.0.0.1:4000/ npx playwright test",
+    "test:update-snapshots": "PW_TEST_CONNECT_WS_ENDPOINT=ws://127.0.0.1:4000/ npx playwright test --update-snapshots",
+    "test:ci": "npx playwright test",
+    "report:show": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "Robert Scheinpflug",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.0.3"
+  }
+}
