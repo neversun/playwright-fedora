@@ -16,6 +16,8 @@
 ## Useful commands
 
 `npm run report:show` Show playwright results/report
+
 `npm run test:update-snapshots` Update the screenshots created with the first run of `npm run test` (if any)
+
 `npm run test:codegen` Start a recording session with playwright's Test Generator
 
